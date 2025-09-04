@@ -1,0 +1,1007 @@
+﻿:root {
+    --blue: #3366ff;
+    --yellow: #ffcc00;
+    --dark: #222;
+}
+
+body{
+    margin: 0px;
+}
+
+.welcome-container {
+    height: 100vh; /* full màn hình */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/bg_welcome.jpg') no-repeat center center/cover;
+    text-align: center;
+    font-family: 'Cherry Bomb One';
+}
+
+/* xuống dòng giữa PORT và FOLIO */
+.welcome-portfolio .line-break {
+    flex-basis: 100%; /* đẩy xuống dòng mới */
+    height: 0; /* không chiếm chỗ thêm */
+}
+
+.welcome-portfolio {
+    font-size: 250px;
+    display: flex;
+    flex-wrap: wrap; /* cho phép xuống dòng */
+    justify-content: center;
+    gap: 30px;
+    vertical-align: middle;
+}
+
+    .welcome-portfolio span {
+        display: inline-block;
+        transition: all 0.3s ease-in-out;
+        vertical-align: middle; /* canh giữa baseline */
+    }
+
+    /* Chữ O thay bằng hình mèo */
+    .welcome-portfolio .welcome-cat {
+        display: inline-block;
+        width: 220px;
+        height: 220px;
+        background: url("../images/cat.png") no-repeat center/contain;
+        transform: translateY(55px);
+        animation: bounce 2s infinite;
+    }
+
+/* Fill xanh */
+.filled {
+    color: #1a54ff;
+    text-shadow: 2px 2px 0 #1a54ff33;
+}
+
+/* Viền xanh, nền trắng */
+.outlined {
+    -webkit-text-stroke: 3px #1a54ff;
+    color: transparent;
+}
+
+/* Hiệu ứng nhấp nháy */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+.blinking {
+    animation: blink 1s infinite;
+}
+
+.welcome-year {
+    margin-top: 15px;
+    display: inline-block;
+    background: #1a54ff;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    transform: rotate(15deg);
+    font-size: 18px;
+}
+
+/* Các chữ trong PORT */
+.welcome-portfolio span:nth-child(1) { /* P */
+    transform: rotate(-5deg) translateY(-5px);
+}
+
+.welcome-portfolio span:nth-child(2) { /* o */
+    transform: rotate(8deg) translateY(5px);
+}
+
+.welcome-portfolio span:nth-child(3) { /* r */
+    transform: rotate(-6deg) translateY(3px);
+}
+
+.welcome-portfolio span:nth-child(4) { /* t */
+    transform: rotate(10deg) translateY(-8px);
+}
+
+/* line-break không cần transform */
+
+/* Các chữ trong FOLIO */
+.welcome-portfolio span:nth-child(6) { /* F */
+    transform: rotate(-10deg) translateY(4px);
+}
+
+.welcome-portfolio .welcome-cat { /* mèo */
+    transform: rotate(5deg) translateY(-3px);
+}
+
+.welcome-portfolio span:nth-child(8) { /* l */
+    transform: rotate(7deg) translateY(6px);
+}
+
+.welcome-portfolio span:nth-child(9) { /* i */
+    transform: rotate(-5deg) translateY(-4px);
+}
+
+.welcome-portfolio span:nth-child(10) { /* o */
+    transform: rotate(12deg) translateY(2px);
+}
+
+/* Vùng chứa About */
+.about-me {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 150px 80px 60px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Text chung */
+.about-text {
+    width: 420px;
+    font-size: 26px;
+    font-family: 'Gluten', sans-serif;
+    line-height: 42px;
+    letter-spacing: 2.5px;
+    color: #355CDB;
+    margin-bottom: 20px;
+}
+
+    .about-text .bold {
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .about-text .light {
+        font-style: normal;
+        font-weight: 100;
+    }
+
+/* Nhóm intro + passion */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Hero Title */
+.hero-title {
+    font-size: 96px;
+    font-family: 'Gluten', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 90px;
+    text-shadow: 3px 3px 4px rgba(255, 205, 59, 1);
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 330px;
+}
+
+    .hero-title .light-yellow {
+        color: white;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: #355CDB;
+    }
+
+    .hero-title .blue {
+        color: #355CDB;
+    }
+
+.profile-pic {
+    width: 520px;
+    height: auto;
+    position: relative;
+}
+
+.decor-shape {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 470px;
+    top: 26%;
+    transform: translateY(-90%) rotate(6deg);
+    transform-origin: top left;
+}
+
+/*RÉSUMÉ*/
+.resume-container {
+    padding: 40px 73px 120px 73px;
+}
+
+.resume-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    position: relative;
+    gap: 20px;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Cherry Bomb One", cursive;
+    font-size: 90px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    position: relative;
+}
+
+    .resume span {
+        display: inline-block;
+        color: #355CDB;
+        text-shadow: 3px 3px 0 #FFCD3B;
+    }
+
+        .resume span:nth-child(1) {
+            transform: rotate(9deg);
+        }
+
+        .resume span:nth-child(2) {
+            transform: rotate(-15deg);
+        }
+
+        .resume span:nth-child(3) {
+            transform: rotate(8deg);
+        }
+
+        .resume span:nth-child(4) {
+            transform: rotate(14deg);
+        }
+
+        .resume span:nth-child(5) {
+            transform: rotate(-8deg);
+        }
+
+        .resume span:nth-child(6) {
+            transform: rotate(-10deg);
+        }
+
+/* Mũi tên bên trái */
+.resume-arrow {
+    position: absolute;
+    left: 3%;
+    top: -100px;
+    width: 190px;
+}
+
+/* Con mèo bên phải */
+.resume-cat {
+    position: absolute;
+    right: -2%;
+    top: -20px;
+    width: 250px;
+}
+
+.resume-arrow img {
+    width: 180px;
+    transform: rotate(-15deg);
+}
+
+.resume-cat img {
+    width: 250px;
+}
+
+.resume-section {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Gluten", cursive;
+    width: 100%;
+    max-width: 1280px;
+    gap: 130px;
+    justify-self: center;
+}
+
+.right-col {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.left-col {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
+}
+
+/* Section title */
+.section-title {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FFCD3B;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Education */
+.edu-major {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 30px 0;
+    color: #355CDB;
+}
+
+.edu-school, .edu-time {
+    font-size: 26px;
+    margin: 6px 0;
+    color: #355CDB;
+}
+
+/* Softskills */
+.softskills {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.softskill {
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-size: 26px;
+    font-weight: 100;
+    text-align: center;
+    display: inline-block;
+    min-width: fit-content;
+    border: 1px solid transparent;
+}
+
+    /* So le ziczac */
+    .softskill:nth-child(1) {
+        align-self: flex-start; /* Lệch trái */
+        margin-left: 100px;
+    }
+
+    .softskill:nth-child(2) {
+        align-self: flex-start; /* Lệch trái */
+        margin-left: 40px;
+    }
+
+    .softskill:nth-child(3) {
+        align-self: flex-start; /* Lệch trái */
+        margin-left: 75px;
+    }
+
+    .softskill:nth-child(4) {
+        align-self: flex-start; /* Lệch trái */
+    }
+
+    /* Odd: outlined ban đầu */
+    .softskill:nth-child(odd) {
+        border: 2px solid #355CDB;
+        color: #355CDB;
+        background: #fff;
+        animation: blinkOdd 4s infinite;
+    }
+
+    /* Even: filled ban đầu */
+    .softskill:nth-child(even) {
+        background: #355CDB;
+        color: #fff;
+        border: 2px solid #355CDB;
+        animation: blinkEven 4s infinite;
+    }
+
+/* Hiệu ứng blink */
+@keyframes blinkOdd {
+    0%, 49% {
+        background: #fff;
+        color: #355CDB;
+    }
+
+    50%, 100% {
+        background: #355CDB;
+        color: #fff;
+    }
+}
+
+@keyframes blinkEven {
+    0%, 49% {
+        background: #355CDB;
+        color: #fff;
+    }
+
+    50%, 100% {
+        background: #fff;
+        color: #355CDB;
+    }
+}
+
+.software-skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* lưới 4 cột */
+    gap: 40px;
+    justify-items: center;
+    background-color: var(--blue);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.skill-card {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out; /* hiệu ứng mượt */
+}
+
+    .skill-card svg {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 8px;
+    }
+
+    .skill-card span {
+        font-size: 20px;
+        text-transform: lowercase;
+        color: #fff;
+    }
+
+    .skill-card.active svg,
+    .skill-card.active span {
+        transform: scale(1.08);
+        color: #fff;
+        filter: drop-shadow(0 0 0.5px #FFCD3B) drop-shadow(0 0 1px #FFCD3B);
+    }
+
+/* Contact */
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.contact-item {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #355CDB;
+}
+
+    .contact-item svg {
+        width: 26px;
+        height: 26px;
+        flex-shrink: 0;
+    }
+
+    .contact-item span, .contact-item a {
+        color: #355CDB;
+        font-size: 26px;
+        text-decoration: none;
+    }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+.project-container {
+    padding: 40px 73px 120px 73px;
+    height: 100vh;
+    background: url('../svg/bg_project_blue.svg') no-repeat center bottom;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 170px;
+}
+
+.project-bee {
+    width: 150px;
+}
+
+/* Con mèo bên phải */
+.project-cat {
+    width: 150px;
+}
+
+.project-bee img {
+    width: 150px;
+    transform: rotate(-15deg);
+}
+
+.project-cat img {
+    width: 150px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-family: "Cherry Bomb One", cursive;
+    font-size: 90px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    position: relative;
+}
+
+    .project span {
+        display: inline-block;
+        color: #fff;
+        text-shadow: 3px 3px 0 #FFCD3B;
+    }
+
+        .project span:nth-child(1) {
+            transform: rotate(9deg);
+        }
+
+        .project span:nth-child(2) {
+            transform: rotate(-15deg);
+        }
+
+        .project span:nth-child(3) {
+            transform: rotate(8deg);
+        }
+
+        .project span:nth-child(4) {
+            transform: rotate(14deg);
+        }
+
+        .project span:nth-child(5) {
+            transform: rotate(-8deg);
+        }
+
+        .project span:nth-child(6) {
+            transform: rotate(-10deg);
+        }
+
+        .project span:nth-child(7) {
+            transform: rotate(9deg);
+        }
+
+        .project span:nth-child(8) {
+            transform: rotate(-10deg);
+        }
+
+.project-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: transparent;
+    border: 2px solid var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 26px;
+    font-weight: normal;
+    border-radius: 8px;
+    user-select: none;
+    font-family: 'Gluten'
+}
+
+    .box:hover {
+        color: var(--yellow);
+    }
+
+        .box:hover .corner {
+            background: var(--yellow);
+        }
+
+.corner {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 5px;
+    border: 4px solid #fff;
+}
+
+    .corner.tl {
+        top: -20px;
+        left: -20px;
+    }
+
+    .corner.tr {
+        top: -20px;
+        right: -20px;
+    }
+
+    .corner.bl {
+        bottom: -20px;
+        left: -20px;
+    }
+
+    .corner.br {
+        bottom: -20px;
+        right: -20px;
+    }
+
+.ui-design {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Cherry Bomb One", cursive;
+    font-size: 90px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    position: relative;
+}
+
+    .ui-design span {
+        display: inline-block;
+        color: #355CDB;
+        text-shadow: 3px 3px 0 #FFCD3B;
+    }
+
+        .ui-design span:nth-child(1) {
+            transform: rotate(9deg);
+        }
+
+        .ui-design span:nth-child(2) {
+            transform: rotate(-15deg);
+        }
+
+        .ui-design span:nth-child(3) {
+            transform: rotate(8deg);
+        }
+
+        .ui-design span:nth-child(4) {
+            transform: rotate(14deg);
+        }
+
+        .ui-design span:nth-child(5) {
+            transform: rotate(-8deg);
+        }
+
+        .ui-design span:nth-child(6) {
+            transform: rotate(-10deg);
+        }
+
+        .ui-design span:nth-child(7) {
+            transform: rotate(-10deg);
+        }
+
+.web-design {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Cherry Bomb One", cursive;
+    font-size: 90px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    position: relative;
+}
+
+    .web-design span {
+        display: inline-block;
+        color: #355CDB;
+        text-shadow: 3px 3px 0 #FFCD3B;
+    }
+
+        .web-design span:nth-child(1) {
+            transform: rotate(9deg);
+        }
+
+        .web-design span:nth-child(2) {
+            transform: rotate(-15deg);
+        }
+
+        .web-design span:nth-child(3) {
+            transform: rotate(8deg);
+        }
+
+        .web-design span:nth-child(4) {
+            transform: rotate(14deg);
+        }
+
+        .web-design span:nth-child(5) {
+            transform: rotate(-8deg);
+        }
+
+        .web-design span:nth-child(6) {
+            transform: rotate(-10deg);
+        }
+
+        .web-design span:nth-child(7) {
+            transform: rotate(9deg);
+        }
+
+        .web-design span:nth-child(8) {
+            transform: rotate(-10deg);
+        }
+
+        .web-design span:nth-child(9) {
+            transform: rotate(9deg);
+        }
+
+/* ======================
+   PROJECTS section
+   ====================== */
+.projects-section {
+    position: relative;
+    padding: 40px 73px 120px 73px;
+    background: transparent;
+    /* Grid layout */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px 40px; /* row gap - col gap */
+    justify-items: center;
+    font-family: Gluten, sans-serif;
+}
+
+/* each project card */
+.projects-card {
+    position: relative;
+    background: transparent;
+    max-width: 545px;
+    width: 100%;
+}
+
+/* index big number */
+.projects-index {
+    font-size: 55px;
+    color: var(--yellow);
+    font-weight: 400;
+}
+
+/* title & description */
+.projects-title {
+    font-size: 36px;
+    color: var(--blue);
+    font-weight: 600;
+    letter-spacing: 3.6px;
+    margin: 6px 0 16px;
+}
+
+.projects-desc {
+    font-size: 26px;
+    color: var(--blue);
+    font-weight: 100;
+    max-width: 549px;
+}
+
+/* tags */
+.projects-tags {
+    display: flex;
+    gap: 12px;
+    margin: 20px 0 100px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    display: inline-block;
+    border-radius: 15px;
+    border: 2px solid var(--blue);
+    padding: 6px 14px;
+    font-size: 20px;
+    color: var(--blue);
+    font-weight: 200;
+}
+
+.tag-plus {
+    background: var(--blue);
+    color: white;
+}
+
+/* mockup frame (shared style) */
+.projects-mockup {
+    position: relative;
+}
+
+.mockup-frame {
+    position: relative;
+    width: 545px;
+    height: 466px;
+    margin: 20px auto;
+    border: 2px solid var(--yellow); /* viền vàng */
+    border-radius: 4px;
+}
+
+/* 4 góc vàng nằm trên viền */
+.mockup-corner {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: var(--yellow);
+    position: absolute;
+    z-index: 10; /* cao hơn viền */
+}
+
+    /* đặt lệch ra ngoài 1 nửa */
+    .mockup-corner:nth-of-type(1) {
+        top: -20px;
+        left: -20px;
+    }
+
+    .mockup-corner:nth-of-type(2) {
+        top: -20px;
+        right: -20px;
+    }
+
+    .mockup-corner:nth-of-type(3) {
+        bottom: -20px;
+        left: -20px;
+    }
+
+    .mockup-corner:nth-of-type(4) {
+        bottom: -20px;
+        right: -20px;
+    }
+
+
+/* overlay */
+.mockup-overlay {
+    position: absolute;
+    inset: 0;
+    background: #FFFCE8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mockup-btn {
+    display: inline-flex; /* icon + chữ nằm cùng hàng */
+    align-items: center; /* căn giữa theo chiều dọc */
+    justify-content: center; /* căn giữa theo chiều ngang */
+    gap: 10px; /* khoảng cách giữa icon và chữ */
+
+    background: #FFCD3B;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #000;
+    transition: background 0.3s;
+    width: 260px;
+    height: 55px;
+}
+
+    .mockup-btn:hover {
+        background: #e6b800;
+    }
+
+.mockup-frame:hover .mockup-overlay {
+    opacity: 1;
+}
+
+.mockup-btn svg {
+    flex-shrink: 0; /* icon không bị co lại */
+}
+
+.mockup-btn span {
+    margin: 0; /* bỏ khoảng trắng mặc định */
+    color: #FFF;
+    font-family: 'Gluten', sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 1;
+}
+
+/* mockup images */
+.mockup-img {
+    position: absolute;
+    border-radius: 12px;
+}
+
+/* specific placements */
+.mockup-img-1 {
+    width: 339px;
+    left: 116px;
+    top: 52px;
+    transform: rotate(9deg);
+}
+
+.mockup-phone-1 {
+    width: 155px;
+    left: 324px;
+    top: 207px;
+}
+
+.mockup-img-2 {
+    width: 310px;
+    left: 101px;
+    top: 74px;
+}
+
+.mockup-phone-2 {
+    width: 161px;
+    left: 347px;
+    top: 251px;
+}
+
+.mockup-img-3 {
+    width: 417px;
+    left: 64px;
+    top: 95px;
+}
+
+.mockup-phone-3 {
+    width: 168px;
+    left: 297px;
+    top: 197px;
+}
+
+.mockup-laptop-4 {
+    width: 360px;
+    left: 160px;
+    top: 88px;
+}
+
+.mockup-phone-4 {
+    width: 90px;
+    top: 44px;
+    left: 165px;
+    transform: rotate(11deg);
+}
+
+.mockup-tablet-4 {
+    width: 135.79px;
+    height: 121.62px;
+    left: 43px;
+    top: 200.54px;
+    position: absolute;
+    transform: rotate(-13deg);
+    transform-origin: top left
+}
+
+.mockup-img-5 {
+    width: 443px;
+    height: 325px;
+    left: 51px;
+    top: 70px;
+    position: absolute
+}
+
+.mockup-img-6 {
+    width: 476px;
+    height: 244px;
+    left: 34px;
+    top: 111px;
+    position: absolute
+}
+
+/*body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #fff;
+}*/
+
+.svg-wrap {
+    width: 100%;
+    max-width: 900px;
+}
+
+.svg-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 6px;
+}
