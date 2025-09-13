@@ -735,6 +735,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 9px;
     position: relative;
+    margin: 0 0 50px;
 }
 
     .ui-design span {
@@ -781,6 +782,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 9px;
     position: relative;
+    margin: 100px 0 50px;
 }
 
     .web-design span {
@@ -1197,3 +1199,827 @@ body{
         .work-item a:hover {
             text-decoration: underline;
         }
+
+/*============ PROJECT 1 - CRUNCH & DASH ===========*/
+
+/* Container */
+.project-1-container {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 80px;
+    box-sizing: border-box;
+}
+
+/* Nội dung 2 cột */
+.project-1-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+/* Bên trái */
+.project-1-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Number */
+.project-1-number {
+    color: #FFF;
+    text-shadow: 4px 3px 0 #FD0000;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FD0000;
+    font-family: Gluten;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+}
+
+/* Title */
+.project-1-title {
+    color: #FFF;
+    text-shadow: 3px 2px 0 #FD0000;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FD0000;
+    font-family: Gluten;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    line-height: 65px;
+}
+
+/* Info */
+.project-1-info {
+    font-size: 32px;
+    font-family: Gluten, sans-serif;
+    letter-spacing: 1.6px;
+}
+
+    .project-1-info .label {
+        color: #FD0000;
+        font-weight: 400;
+    }
+
+    .project-1-info .value {
+        color: #FD0000;
+        font-weight: 200;
+    }
+
+/* Button */
+.project-1-button {
+    width: fit-content;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    background: #FD0000;
+    border: 2px solid #FD0000;
+    border-radius: 15px;
+    font-size: 26px;
+    font-family: Gluten, sans-serif;
+    font-weight: 200;
+    letter-spacing: 2.6px;
+    color: white;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+    .project-1-button:hover {
+        background: white;
+        color: #FD0000;
+    }
+
+.project-1-button-icon {
+    width: 17px;
+    height: 18px;
+    display: inline-block;
+    color: white; /* icon mặc định trắng */
+}
+
+.project-1-button:hover .project-1-button-icon {
+    color: red; /* hover đổi màu */
+}
+
+/* Bên phải */
+.project-1-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-1-image {
+    max-width: 100%;
+    height: 100%;
+    width: 788px;
+}
+
+/* Scroll icon */
+.project-1-scroll {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+    .project-1-scroll img {
+        width: 28px;
+        height: auto;
+    }
+
+.project-1-about,
+.project-1-problem-solution,
+.project-1-timeline,
+.project-1-design-process,
+.project-1-user-persona,
+.project-1-empathy-map,
+.project-1-user-journey-map,
+.project-1-competitor-analysis,
+.project-1-feature-comparison,
+.project-1-user-flow,
+.project-1-test-phase {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background: #fff; /* hoặc màu nền bạn muốn */
+}
+
+    .project-1-about img,
+    .project-1-problem-solution img,
+    .project-1-timeline img,
+    .project-1-design-process img,
+    .project-1-user-persona img,
+    .project-1-empathy-map img,
+    .project-1-user-journey-map img,
+    .project-1-competitor-analysis img,
+    .project-1-feature-comparison img,
+    .project-1-user-flow img,
+    .project-1-test-phase img {
+        max-width: 100%;
+        width: 1294px;
+        height: auto;
+        display: block;
+    }
+
+.project-1-style-guide,
+.project-1-visual-design,
+.project-1-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+    .project-1-style-guide img,
+    .project-1-visual-design img,
+    .project-1-footer img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .project-1-design-switch {
+        width: 100%;
+        height: 260px;
+        background-size: cover;
+        background-position: center;
+        animation: switchDesign 2s infinite alternate;
+    }
+
+@keyframes switchDesign {
+    0% {
+        background-image: url('../images/project-1-design1.png');
+    }
+
+    100% {
+        background-image: url('../images/project-1-design2.png');
+    }
+}
+
+.project-1-logo-switch {
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    animation: switchLogo 2s infinite alternate;
+}
+
+@keyframes switchLogo {
+    0% {
+        background-image: url('../images/project-1-logo1.png'); 
+    }
+
+    100% {
+        background-image: url('../images/project-1-logo2.png');
+    }
+}
+
+.project-1-wireframe,
+.project-1-more-screen {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-1-wireframe-bg,
+.project-1-more-screen-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-1-wireframe-phone {
+    position: absolute;
+    top: 506px;
+    width: 429px;
+    animation: floatPhone 3s ease-in-out infinite;
+}
+
+.project-1-more-screen-phone {
+    position: absolute;
+    top: 650px;
+    width: 429px;
+    animation: floatPhone 3s ease-in-out infinite;
+}
+
+/* Animation nhúng lên xuống */
+@keyframes floatPhone {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px); /* nhúng lên */
+    }
+}
+
+.project-1-next-prev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1294px;
+    margin: 0 auto; /* căn giữa nguyên khối */
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+/* Nút chung */
+.project-1-btn {
+    font-family: 'Gluten';
+    font-size: 20px;
+    font-weight: 500;
+    color: #FD0000;
+    background: url("../images/bg-btn.png") no-repeat center;
+    background-size: 100% 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+    /* Hover */
+    .project-1-btn:hover {
+        background: #FD0000;
+        color: #fff;
+    }
+
+    .project-1-btn .arrow-gif {
+        width: 50px; /* chỉnh kích thước gif */
+        height: auto;
+    }
+
+/*============ PROJECT 2 - THE ROYAL SEA ===========*/
+
+/* Container */
+.project-2-container {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 80px;
+    box-sizing: border-box;
+}
+
+/* Nội dung 2 cột */
+.project-2-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Bên trái */
+.project-2-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Number */
+.project-2-number {
+    color: #FFF;
+    text-shadow: 4px 3px 0 #7096D1;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #7096D1;
+    font-family: Gluten;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+}
+
+/* Title */
+.project-2-title {
+    color: #FFF;
+    text-shadow: 3px 2px 0 #7096D1;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #7096D1;
+    font-family: Gluten;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    line-height: 65px;
+}
+
+/* Info */
+.project-2-info {
+    font-size: 32px;
+    font-family: Gluten, sans-serif;
+    letter-spacing: 1.6px;
+}
+
+    .project-2-info .label {
+        color: #7096D1;
+        font-weight: 400;
+    }
+
+    .project-2-info .value {
+        color: #7096D1;
+        font-weight: 200;
+    }
+
+/* Button */
+.project-2-button {
+    width: fit-content;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    background: #7096D1;
+    border: 2px solid #7096D1;
+    border-radius: 15px;
+    font-size: 26px;
+    font-family: Gluten, sans-serif;
+    font-weight: 200;
+    letter-spacing: 2.6px;
+    color: white;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+    .project-2-button:hover {
+        background: white;
+        color: #7096D1;
+    }
+
+.project-2-button-icon {
+    width: 17px;
+    height: 18px;
+    display: inline-block;
+    color: white; /* icon mặc định trắng */
+}
+
+.project-2-button:hover .project-2-button-icon {
+    color: #7096D1; /* hover đổi màu */
+}
+
+/* Bên phải */
+.project-2-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-2-image {
+    max-width: 100%;
+    height: 100%;
+    width: 470px;
+}
+
+/* Scroll icon */
+.project-2-scroll {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+    .project-2-scroll img {
+        width: 28px;
+        height: auto;
+    }
+
+.project-2-about,
+.project-2-problem-solution,
+.project-2-timeline,
+.project-2-design-process,
+.project-2-user-persona,
+.project-2-empathy-map,
+.project-2-user-journey-map,
+.project-2-competitor-analysis,
+.project-2-feature-comparison,
+.project-2-user-flow,
+.project-2-test-phase {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background: #fff; /* hoặc màu nền bạn muốn */
+}
+
+    .project-2-about img,
+    .project-2-problem-solution img,
+    .project-2-timeline img,
+    .project-2-design-process img,
+    .project-2-user-persona img,
+    .project-2-empathy-map img,
+    .project-2-user-journey-map img,
+    .project-2-competitor-analysis img,
+    .project-2-feature-comparison img,
+    .project-2-user-flow img,
+    .project-2-test-phase img {
+        max-width: 100%;
+        width: 1294px;
+        height: auto;
+        display: block;
+    }
+
+.project-2-design-switch {
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    animation: switchDesign2 2s infinite alternate;
+}
+
+@keyframes switchDesign2 {
+    0% {
+        background-image: url('../images/project-2-design1.png');
+    }
+
+    100% {
+        background-image: url('../images/project-2-design2.png');
+    }
+}
+
+.project-2-logo-switch {
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    animation: switchLogo2 2s infinite alternate;
+}
+
+@keyframes switchLogo2 {
+    0% {
+        background-image: url('../images/project-2-logo1.png');
+    }
+
+    100% {
+        background-image: url('../images/project-2-logo2.png');
+    }
+}
+
+.project-2-wireframe,
+.project-2-more-screen {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-2-wireframe-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-2-more-screen-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 60px 0;
+}
+
+.project-2-wireframe-phone {
+    position: absolute;
+    top: 506px;
+    width: 429px;
+    animation: floatPhone 3s ease-in-out infinite;
+}
+
+.project-2-more-screen-phone {
+    position: absolute;
+    top: 506px;
+    width: 429px;
+    animation: floatPhone 3s ease-in-out infinite;
+}
+
+.project-2-style-guide,
+.project-2-visual-design,
+.project-2-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+    .project-2-style-guide img,
+    .project-2-visual-design img,
+    .project-2-footer img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.project-2-next-prev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1294px;
+    margin: 0 auto; /* căn giữa nguyên khối */
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+/* Nút chung */
+.project-2-btn {
+    font-family: 'Gluten';
+    font-size: 20px;
+    font-weight: 500;
+    color: #7096D1;
+    background: url("../images/bg-btn-2.png") no-repeat center;
+    background-size: 100% 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+    /* Hover */
+    .project-2-btn:hover {
+        background: #7096D1;
+        color: #fff;
+    }
+
+    .project-2-btn .arrow-gif {
+        width: 50px; /* chỉnh kích thước gif */
+        height: auto;
+    }
+
+/*============ PROJECT 3 - THE ROYAL SEA WEB ===========*/
+
+/* Container */
+.project-3-container {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 80px;
+    box-sizing: border-box;
+}
+
+/* Nội dung 2 cột */
+.project-3-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Bên trái */
+.project-3-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Number */
+.project-3-number {
+    color: #FFF;
+    text-shadow: 4px 3px 0 #004168;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #004168;
+    font-family: Gluten;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+}
+
+/* Title */
+.project-3-title {
+    color: #FFF;
+    text-shadow: 3px 2px 0 #004168;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #004168;
+    font-family: Gluten;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    line-height: 65px;
+}
+
+/* Info */
+.project-3-info {
+    font-size: 32px;
+    font-family: Gluten, sans-serif;
+    letter-spacing: 1.6px;
+}
+
+    .project-3-info .label {
+        color: #004168;
+        font-weight: 400;
+    }
+
+    .project-3-info .value {
+        color: #004168;
+        font-weight: 200;
+    }
+
+/* Button */
+.project-3-button {
+    width: fit-content;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    background: #004168;
+    border: 2px solid #004168;
+    border-radius: 15px;
+    font-size: 26px;
+    font-family: Gluten, sans-serif;
+    font-weight: 200;
+    letter-spacing: 2.6px;
+    color: white;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+    .project-3-button:hover {
+        background: white;
+        color: #004168;
+    }
+
+.project-3-button-icon {
+    width: 17px;
+    height: 18px;
+    display: inline-block;
+    color: white; /* icon mặc định trắng */
+}
+
+.project-3-button:hover .project-3-button-icon {
+    color: #004168; /* hover đổi màu */
+}
+
+/* Bên phải */
+.project-3-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-3-image {
+    max-width: 100%;
+    height: 100%;
+    width: 712px;
+}
+
+/* Scroll icon */
+.project-3-scroll {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+    .project-3-scroll img {
+        width: 57px;
+        height: auto;
+    }
+
+.project-3-about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background: #fff; /* hoặc màu nền bạn muốn */
+}
+
+    .project-3-about img {
+        max-width: 100%;
+        width: 1294px;
+        height: auto;
+        display: block;
+    }
+
+.project-3-style-guide,
+.project-3-visual-design,
+.project-3-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+    .project-3-style-guide img,
+    .project-3-visual-design img,
+    .project-3-footer img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.project-3-next-prev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1294px;
+    margin: 60px auto; /* căn giữa nguyên khối */
+    width: 100%;
+}
+
+/* Nút chung */
+.project-3-btn {
+    font-family: 'Gluten';
+    font-size: 20px;
+    font-weight: 500;
+    color: #004168;
+    background: url("../images/bg-btn-3.png") no-repeat center;
+    background-size: 100% 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+    /* Hover */
+    .project-3-btn:hover {
+        background: #004168;
+        color: #fff;
+    }
+
+    .project-3-btn .arrow-gif {
+        width: 50px; /* chỉnh kích thước gif */
+        height: auto;
+    }
