@@ -427,7 +427,7 @@ body{
 
 .edu-school, .edu-time {
     font-size: 26px;
-    margin: 6px 0;
+    margin: 25px 0;
     color: #355CDB;
 }
 
@@ -666,15 +666,17 @@ body{
         }
 
 .project-box {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px; /* khoảng cách giữa 2 box */
+    margin-top: 150px;
 }
 
 .box {
-    position: absolute;
-    width: 280px;
-    height: 280px;
+    position: relative;
+    width: 300px;
+    height: 300px;
     background: transparent;
     border: 2px solid var(--yellow);
     display: flex;
@@ -682,12 +684,13 @@ body{
     justify-content: center;
     color: white;
     font-size: 26px;
-    font-weight: normal;
+    font-family: 'Gluten', sans-serif;
     border-radius: 8px;
     user-select: none;
-    font-family: 'Gluten'
+    transition: 0.3s ease;
 }
 
+    /* hiệu ứng hover */
     .box:hover {
         color: var(--yellow);
     }
@@ -696,10 +699,11 @@ body{
             background: var(--yellow);
         }
 
+/* 4 góc */
 .corner {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: white;
     border-radius: 5px;
     border: 4px solid #fff;
@@ -724,6 +728,15 @@ body{
         bottom: -20px;
         right: -20px;
     }
+
+/* Xoay riêng từng box */
+.ui-box {
+    transform: rotate(-25deg);
+}
+
+.web-box {
+    transform: rotate(8deg);
+}
 
 .ui-design {
     display: flex;
@@ -1074,16 +1087,6 @@ body{
     top: 111px;
     position: absolute
 }
-
-/*body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    background: #fff;
-}*/
-
 
 .icon {
     width: 30px;
@@ -1831,7 +1834,7 @@ body{
 /* Nội dung 2 cột */
 .project-3-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 550px;
     align-items: center;
     gap: 40px;
 }
@@ -1948,7 +1951,7 @@ body{
 }
 
     .project-3-scroll img {
-        width: 57px;
+        width: 80px;
         height: auto;
     }
 
@@ -2023,3 +2026,693 @@ body{
         width: 50px; /* chỉnh kích thước gif */
         height: auto;
     }
+
+/*============ PROJECT 4 - MOUNTAIN VIEW DENTAL CARE WEB ===========*/
+
+/* Container */
+.project-4-container {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 80px;
+    box-sizing: border-box;
+}
+
+/* Nội dung 2 cột */
+.project-4-content {
+    display: grid;
+    grid-template-columns: 1fr 550px;
+    align-items: center;
+}
+
+/* Bên trái */
+.project-4-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Number */
+.project-4-number {
+    color: #FFF;
+    text-shadow: 4px 3px 0 #5790AB;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #5790AB;
+    font-family: Gluten;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+}
+
+/* Title */
+.project-4-title {
+    color: #FFF;
+    text-shadow: 3px 2px 0 #5790AB;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #5790AB;
+    font-family: Gluten;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    line-height: 65px;
+}
+
+/* Info */
+.project-4-info {
+    font-size: 32px;
+    font-family: Gluten, sans-serif;
+    letter-spacing: 1.6px;
+}
+
+    .project-4-info .label {
+        color: #5790AB;
+        font-weight: 400;
+    }
+
+    .project-4-info .value {
+        color: #5790AB;
+        font-weight: 200;
+    }
+
+
+/* Button */
+.project-4-button {
+    width: fit-content;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    background: #5790AB;
+    border: 2px solid #5790AB;
+    border-radius: 15px;
+    font-size: 26px;
+    font-family: Gluten, sans-serif;
+    font-weight: 200;
+    letter-spacing: 2.6px;
+    color: white;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+    .project-4-button:hover {
+        background: white;
+        color: #5790AB;
+    }
+
+.project-4-button-icon {
+    width: 17px;
+    height: 18px;
+    display: inline-block;
+    color: white; /* icon mặc định trắng */
+}
+
+.project-4-button:hover .project-4-button-icon {
+    color: #5790AB; /* hover đổi màu */
+}
+
+/* Bên phải */
+.project-4-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-4-image {
+    max-width: 100%;
+    height: 100%;
+    width: 500px;
+}
+
+/* Scroll icon */
+.project-4-scroll {
+    display: flex;
+    justify-content: center;
+}
+
+    .project-4-scroll img {
+        width: 80px;
+        height: auto;
+    }
+
+.project-4-about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background: #fff; /* hoặc màu nền bạn muốn */
+}
+
+    .project-4-about img {
+        max-width: 100%;
+        width: 1294px;
+        height: auto;
+        display: block;
+    }
+
+.project-4-style-guide,
+.project-4-visual-design,
+.project-4-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+    .project-4-style-guide img,
+    .project-4-visual-design img,
+    .project-4-footer img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.project-4-next-prev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1294px;
+    margin: 60px auto; /* căn giữa nguyên khối */
+    width: 100%;
+}
+
+/* Nút chung */
+.project-4-btn {
+    font-family: 'Gluten';
+    font-size: 20px;
+    font-weight: 500;
+    color: #5790AB;
+    background: url("../images/bg-btn-4.png") no-repeat center;
+    background-size: 100% 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+    /* Hover */
+    .project-4-btn:hover {
+        background: #5790AB;
+        color: #fff;
+    }
+
+    .project-4-btn .arrow-gif {
+        width: 50px; /* chỉnh kích thước gif */
+        height: auto;
+    }
+
+/*============ PROJECT 5 - CÉLESTE ÉLYSÉE RESTAURANT WEB ===========*/
+
+/* Container */
+.project-5-container {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 80px;
+    box-sizing: border-box;
+}
+
+/* Nội dung 2 cột */
+.project-5-content {
+    display: grid;
+    grid-template-columns: 1fr 550px;
+    align-items: center;
+}
+
+/* Bên trái */
+.project-5-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Number */
+.project-5-number {
+    color: #FFF;
+    text-shadow: 4px 3px 0 #203F25;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #203F25;
+    font-family: Gluten;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+}
+
+/* Title */
+.project-5-title {
+    color: #FFF;
+    text-shadow: 3px 2px 0 #203F25;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #203F25;
+    font-family: Gluten;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    line-height: 65px;
+}
+
+/* Info */
+.project-5-info {
+    font-size: 32px;
+    font-family: Gluten, sans-serif;
+    letter-spacing: 1.6px;
+}
+
+    .project-5-info .label {
+        color: #203F25;
+        font-weight: 400;
+    }
+
+    .project-5-info .value {
+        color: #203F25;
+        font-weight: 200;
+    }
+
+
+/* Button */
+.project-5-button {
+    width: fit-content;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    background: #203F25;
+    border: 2px solid #203F25;
+    border-radius: 15px;
+    font-size: 26px;
+    font-family: Gluten, sans-serif;
+    font-weight: 200;
+    letter-spacing: 2.6px;
+    color: white;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+    .project-5-button:hover {
+        background: white;
+        color: #203F25;
+    }
+
+.project-5-button-icon {
+    width: 17px;
+    height: 18px;
+    display: inline-block;
+    color: white; /* icon mặc định trắng */
+}
+
+.project-5-button:hover .project-5-button-icon {
+    color: #203F25; /* hover đổi màu */
+}
+
+/* Bên phải */
+.project-5-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-5-image {
+    max-width: 100%;
+    height: 100%;
+    width: 500px;
+}
+
+/* Scroll icon */
+.project-5-scroll {
+    display: flex;
+    justify-content: center;
+}
+
+    .project-5-scroll img {
+        width: 80px;
+        height: auto;
+    }
+
+.project-5-about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background: #fff; /* hoặc màu nền bạn muốn */
+}
+
+    .project-5-about img {
+        max-width: 100%;
+        width: 1294px;
+        height: auto;
+        display: block;
+    }
+
+.project-5-style-guide,
+.project-5-visual-design,
+.project-5-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+    .project-5-style-guide img,
+    .project-5-visual-design img,
+    .project-5-footer img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.project-5-next-prev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1294px;
+    margin: 60px auto; /* căn giữa nguyên khối */
+    width: 100%;
+}
+
+/* Nút chung */
+.project-5-btn {
+    font-family: 'Gluten';
+    font-size: 20px;
+    font-weight: 500;
+    color: #203F25;
+    background: url("../images/bg-btn-5.png") no-repeat center;
+    background-size: 100% 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+    /* Hover */
+    .project-5-btn:hover {
+        background: #203F25;
+        color: #fff;
+    }
+
+    .project-5-btn .arrow-gif {
+        width: 50px; /* chỉnh kích thước gif */
+        height: auto;
+    }
+
+/*============ PROJECT 6 - MAISON DES SAVEURS WEB ===========*/
+
+/* Container */
+.project-6-container {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 80px;
+    box-sizing: border-box;
+}
+
+/* Nội dung 2 cột */
+.project-6-content {
+    display: grid;
+    grid-template-columns: 1fr 550px;
+    align-items: center;
+}
+
+/* Bên trái */
+.project-6-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Number */
+.project-6-number {
+    color: #FFF;
+    text-shadow: 4px 3px 0 #CF2030;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #CF2030;
+    font-family: Gluten;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+}
+
+/* Title */
+.project-6-title {
+    color: #FFF;
+    text-shadow: 3px 2px 0 #CF2030;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #CF2030;
+    font-family: Gluten;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    line-height: 65px;
+}
+
+/* Info */
+.project-6-info {
+    font-size: 32px;
+    font-family: Gluten, sans-serif;
+    letter-spacing: 1.6px;
+}
+
+    .project-6-info .label {
+        color: #CF2030;
+        font-weight: 400;
+    }
+
+    .project-6-info .value {
+        color: #CF2030;
+        font-weight: 200;
+    }
+
+/* Button */
+.project-6-button {
+    width: fit-content;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    background: #CF2030;
+    border: 2px solid #CF2030;
+    border-radius: 15px;
+    font-size: 26px;
+    font-family: Gluten, sans-serif;
+    font-weight: 200;
+    letter-spacing: 2.6px;
+    color: white;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+    .project-6-button:hover {
+        background: white;
+        color: #CF2030;
+    }
+
+.project-6-button-icon {
+    width: 17px;
+    height: 18px;
+    display: inline-block;
+    color: white; /* icon mặc định trắng */
+}
+
+.project-6-button:hover .project-6-button-icon {
+    color: #CF2030; /* hover đổi màu */
+}
+
+/* Bên phải */
+.project-6-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-6-image {
+    max-width: 100%;
+    height: 100%;
+    width: 788px;
+}
+
+/* Scroll icon */
+.project-6-scroll {
+    display: flex;
+    justify-content: center;
+}
+
+    .project-6-scroll img {
+        width: 80px;
+        height: auto;
+    }
+
+.project-6-about,
+.project-6-problem-solution,
+.project-6-timeline,
+.project-6-design-process,
+.project-6-user-persona,
+.project-6-empathy-map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background: #fff; /* hoặc màu nền bạn muốn */
+}
+
+    .project-6-about img,
+    .project-6-problem-solution img,
+    .project-6-timeline img,
+    .project-6-design-process img,
+    .project-6-user-persona img,
+    .project-6-empathy-map img {
+        max-width: 100%;
+        width: 1294px;
+        height: auto;
+        display: block;
+    }
+
+.project-6-style-guide,
+.project-6-visual-design,
+.project-6-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+    .project-6-style-guide img,
+    .project-6-visual-design img,
+    .project-6-footer img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.project-6-design-switch {
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    animation: switchDesign6 2s infinite alternate;
+}
+
+@keyframes switchDesign6 {
+    0% {
+        background-image: url('../images/project-6-design1.png');
+    }
+
+    100% {
+        background-image: url('../images/project-6-design2.png');
+    }
+}
+
+.project-6-logo-switch {
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    animation: switchLogo6 2s infinite alternate;
+}
+
+@keyframes switchLogo6 {
+    0% {
+        background-image: url('../images/project-6-logo1.png');
+    }
+
+    100% {
+        background-image: url('../images/project-6-logo2.png');
+    }
+}
+
+.project-6-wireframe {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-6-wireframe-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-6-next-prev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1294px;
+    margin: 0 auto; /* căn giữa nguyên khối */
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+/* Nút chung */
+.project-6-btn {
+    font-family: 'Gluten';
+    font-size: 20px;
+    font-weight: 500;
+    color: #CF2030;
+    background: url("../images/bg-btn-6.png") no-repeat center;
+    background-size: 100% 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+    /* Hover */
+    .project-6-btn:hover {
+        background: #CF2030;
+        color: #fff;
+    }
+
+    .project-6-btn .arrow-gif {
+        width: 50px; /* chỉnh kích thước gif */
+        height: auto;
+    }
+
+/*================== RESPONSIVE =======================*/

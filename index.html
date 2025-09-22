@@ -3,11 +3,13 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio of TuytNgan</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Gluten:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <section class="welcome-container">
         <!-- Welcome To My (chạy theo đường cong) -->
         <svg viewBox="0 0 500 200" class="welcome-svg">
@@ -21,17 +23,17 @@
 
         <div class="welcome-portfolio">
             <div class="welcome-group">
-            <span>P</span>
-            <span>o</span>
-            <span>r</span>
-            <span>t</span>
+                <span>P</span>
+                <span>o</span>
+                <span>r</span>
+                <span>t</span>
             </div>
             <div class="welcome-group">
-            <span>F</span>
-            <span class="welcome-cat"></span>
-            <span>l</span>
-            <span>i</span>
-            <span>o</span>
+                <span>F</span>
+                <span class="welcome-cat"></span>
+                <span>l</span>
+                <span>i</span>
+                <span>o</span>
             </div>
         </div>
 
@@ -220,7 +222,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewBox="0 0 30 23" fill="none">
                                 <path d="M26.8619 0.0766602H3.13815C2.30615 0.0776177 1.5085 0.412295 0.92019 1.00727C0.331877 1.60224 0.000946861 2.40893 0 3.25035V18.903C0.000946861 19.7444 0.331877 20.5511 0.92019 21.146C1.5085 21.741 2.30615 22.0757 3.13815 22.0767H26.8618C27.6938 22.0757 28.4915 21.741 29.0798 21.146C29.6681 20.5511 29.9991 19.7444 30 18.903V3.25035C29.9991 2.40893 29.6682 1.60223 29.0799 1.00725C28.4916 0.412275 27.6939 0.077601 26.8619 0.0766602ZM21.2823 11.0723L28.7448 5.1491V18.3985L21.2823 11.0723ZM3.13815 1.34614H26.8618C27.361 1.34671 27.8396 1.54751 28.1926 1.9045C28.5456 2.26148 28.7442 2.74549 28.7447 3.25035V3.53534L16.6685 13.121C16.227 13.4696 15.6828 13.6587 15.1226 13.6583C14.5625 13.6578 14.0186 13.4678 13.5777 13.1185L1.25526 3.53293V3.25035C1.25583 2.74549 1.45438 2.26148 1.80737 1.9045C2.16036 1.54751 2.63895 1.34671 3.13815 1.34614ZM8.93985 11.1122L1.25526 18.4241V5.1345L8.93985 11.1122ZM26.8619 20.8072H3.13815C2.81671 20.807 2.50066 20.7236 2.22009 20.5649C1.93953 20.4063 1.70378 20.1776 1.53531 19.9008L9.9477 11.8967L12.8086 14.1221C13.4702 14.6448 14.2857 14.9286 15.1252 14.9284C15.9648 14.9282 16.7801 14.6439 17.4415 14.1209L20.2858 11.8637L28.468 19.8957C28.2998 20.174 28.0638 20.4039 27.7826 20.5635C27.5014 20.7231 27.1844 20.807 26.8619 20.8072Z" fill="#355CDB" />
                             </svg>
-                            <span>tuyetngan3454@gmail.com</span>
+                            <span>ngdtngannnnn@gmail.com</span>
                         </div>
 
                         <div class="contact-item">
@@ -275,15 +277,16 @@
             </div>
         </div>
 
-        <div class="project-box" id="scene-box">
-            <div class="box" id="box1">
+        <div class="project-box">
+            <div class="box ui-box">
                 UI Design
                 <div class="corner tl"></div>
                 <div class="corner tr"></div>
                 <div class="corner bl"></div>
                 <div class="corner br"></div>
             </div>
-            <div class="box" id="box2">
+
+            <div class="box web-box">
                 Web Design
                 <div class="corner tl"></div>
                 <div class="corner tr"></div>
@@ -420,11 +423,11 @@
 
                     <!-- overlay + nút -->
                     <div class="mockup-overlay">
-                        <button class="mockup-btn">
+                        <button class="mockup-btn" onclick="window.open('project3.html', '_blank')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                                 <path d="M17.7325 6.68816L6.55407 0.549069C5.88266 0.180268 5.1254 -0.00889015 4.35726 0.000321022C3.58912 0.00953219 2.83673 0.216793 2.17458 0.601585C1.51243 0.986377 0.963475 1.53536 0.582068 2.19418C0.200661 2.853 2.61636e-05 3.59881 2.36351e-05 4.35778V16.6363C-0.00249646 17.3962 0.196553 18.1436 0.577348 18.8038C0.958142 19.4641 1.50739 20.0143 2.17038 20.3996C2.83337 20.7848 3.58696 20.9918 4.35609 20.9998C5.12522 21.0077 5.88304 20.8165 6.55407 20.445L17.7325 14.3059C18.4198 13.9284 18.9924 13.3762 19.3911 12.7066C19.7898 12.0369 20 11.2741 20 10.4972C20 9.72032 19.7898 8.95753 19.3911 8.28787C18.9924 7.61821 18.4198 7.06568 17.7325 6.68816ZM16.8746 12.7823L5.69609 18.9215C5.29326 19.1427 4.83898 19.256 4.37819 19.2504C3.9174 19.2448 3.46608 19.1204 3.06889 18.8896C2.6717 18.6587 2.34241 18.3294 2.1136 17.9342C1.88479 17.539 1.7644 17.0916 1.76433 16.6363V4.35778C1.76282 3.9019 1.88223 3.45357 2.11065 3.05747C2.33908 2.66136 2.66856 2.33129 3.06627 2.10013C3.46398 1.86897 3.91605 1.74478 4.37746 1.73995C4.83886 1.73511 5.2935 1.84978 5.69609 2.07255L16.8746 8.21182C17.2869 8.43833 17.6305 8.76964 17.8697 9.17144C18.1089 9.57324 18.235 10.0309 18.235 10.4971C18.235 10.9632 18.1089 11.4209 17.8697 11.8227C17.6305 12.2245 17.2869 12.5558 16.8746 12.7823Z" fill="white" />
                             </svg>
-                            <span>Live Demo</span>
+                            <span>View Project</span>
                         </button>
                     </div>
                 </div>
@@ -457,11 +460,11 @@
                     <img src="images/project-2.1.png" alt="phone2" class="mockup-img mockup-phone-2" />
 
                     <div class="mockup-overlay">
-                        <button class="mockup-btn">
+                        <button class="mockup-btn" onclick="window.open('project4.html', '_blank')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                                 <path d="M17.7325 6.68816L6.55407 0.549069C5.88266 0.180268 5.1254 -0.00889015 4.35726 0.000321022C3.58912 0.00953219 2.83673 0.216793 2.17458 0.601585C1.51243 0.986377 0.963475 1.53536 0.582068 2.19418C0.200661 2.853 2.61636e-05 3.59881 2.36351e-05 4.35778V16.6363C-0.00249646 17.3962 0.196553 18.1436 0.577348 18.8038C0.958142 19.4641 1.50739 20.0143 2.17038 20.3996C2.83337 20.7848 3.58696 20.9918 4.35609 20.9998C5.12522 21.0077 5.88304 20.8165 6.55407 20.445L17.7325 14.3059C18.4198 13.9284 18.9924 13.3762 19.3911 12.7066C19.7898 12.0369 20 11.2741 20 10.4972C20 9.72032 19.7898 8.95753 19.3911 8.28787C18.9924 7.61821 18.4198 7.06568 17.7325 6.68816ZM16.8746 12.7823L5.69609 18.9215C5.29326 19.1427 4.83898 19.256 4.37819 19.2504C3.9174 19.2448 3.46608 19.1204 3.06889 18.8896C2.6717 18.6587 2.34241 18.3294 2.1136 17.9342C1.88479 17.539 1.7644 17.0916 1.76433 16.6363V4.35778C1.76282 3.9019 1.88223 3.45357 2.11065 3.05747C2.33908 2.66136 2.66856 2.33129 3.06627 2.10013C3.46398 1.86897 3.91605 1.74478 4.37746 1.73995C4.83886 1.73511 5.2935 1.84978 5.69609 2.07255L16.8746 8.21182C17.2869 8.43833 17.6305 8.76964 17.8697 9.17144C18.1089 9.57324 18.235 10.0309 18.235 10.4971C18.235 10.9632 18.1089 11.4209 17.8697 11.8227C17.6305 12.2245 17.2869 12.5558 16.8746 12.7823Z" fill="white" />
                             </svg>
-                            <span>Live Demo</span>
+                            <span>View Project</span>
                         </button>
                     </div>
                 </div>
@@ -494,11 +497,11 @@
                     <img src="images/project-3.1.png" alt="phone3" class="mockup-img mockup-phone-3" />
 
                     <div class="mockup-overlay">
-                        <button class="mockup-btn">
+                        <button class="mockup-btn" onclick="window.open('project5.html', '_blank')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                                 <path d="M17.7325 6.68816L6.55407 0.549069C5.88266 0.180268 5.1254 -0.00889015 4.35726 0.000321022C3.58912 0.00953219 2.83673 0.216793 2.17458 0.601585C1.51243 0.986377 0.963475 1.53536 0.582068 2.19418C0.200661 2.853 2.61636e-05 3.59881 2.36351e-05 4.35778V16.6363C-0.00249646 17.3962 0.196553 18.1436 0.577348 18.8038C0.958142 19.4641 1.50739 20.0143 2.17038 20.3996C2.83337 20.7848 3.58696 20.9918 4.35609 20.9998C5.12522 21.0077 5.88304 20.8165 6.55407 20.445L17.7325 14.3059C18.4198 13.9284 18.9924 13.3762 19.3911 12.7066C19.7898 12.0369 20 11.2741 20 10.4972C20 9.72032 19.7898 8.95753 19.3911 8.28787C18.9924 7.61821 18.4198 7.06568 17.7325 6.68816ZM16.8746 12.7823L5.69609 18.9215C5.29326 19.1427 4.83898 19.256 4.37819 19.2504C3.9174 19.2448 3.46608 19.1204 3.06889 18.8896C2.6717 18.6587 2.34241 18.3294 2.1136 17.9342C1.88479 17.539 1.7644 17.0916 1.76433 16.6363V4.35778C1.76282 3.9019 1.88223 3.45357 2.11065 3.05747C2.33908 2.66136 2.66856 2.33129 3.06627 2.10013C3.46398 1.86897 3.91605 1.74478 4.37746 1.73995C4.83886 1.73511 5.2935 1.84978 5.69609 2.07255L16.8746 8.21182C17.2869 8.43833 17.6305 8.76964 17.8697 9.17144C18.1089 9.57324 18.235 10.0309 18.235 10.4971C18.235 10.9632 18.1089 11.4209 17.8697 11.8227C17.6305 12.2245 17.2869 12.5558 16.8746 12.7823Z" fill="white" />
                             </svg>
-                            <span>Live Demo</span>
+                            <span>View Project</span>
                         </button>
                     </div>
                 </div>
@@ -528,7 +531,7 @@
                     <img src="images/project-4.2.png" alt="phone" class="mockup-img mockup-phone-4" />
 
                     <div class="mockup-overlay">
-                        <button class="mockup-btn">
+                        <button class="mockup-btn" onclick="window.open('project6.html', '_blank')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                                 <path d="M17.7325 6.68816L6.55407 0.549069C5.88266 0.180268 5.1254 -0.00889015 4.35726 0.000321022C3.58912 0.00953219 2.83673 0.216793 2.17458 0.601585C1.51243 0.986377 0.963475 1.53536 0.582068 2.19418C0.200661 2.853 2.61636e-05 3.59881 2.36351e-05 4.35778V16.6363C-0.00249646 17.3962 0.196553 18.1436 0.577348 18.8038C0.958142 19.4641 1.50739 20.0143 2.17038 20.3996C2.83337 20.7848 3.58696 20.9918 4.35609 20.9998C5.12522 21.0077 5.88304 20.8165 6.55407 20.445L17.7325 14.3059C18.4198 13.9284 18.9924 13.3762 19.3911 12.7066C19.7898 12.0369 20 11.2741 20 10.4972C20 9.72032 19.7898 8.95753 19.3911 8.28787C18.9924 7.61821 18.4198 7.06568 17.7325 6.68816ZM16.8746 12.7823L5.69609 18.9215C5.29326 19.1427 4.83898 19.256 4.37819 19.2504C3.9174 19.2448 3.46608 19.1204 3.06889 18.8896C2.6717 18.6587 2.34241 18.3294 2.1136 17.9342C1.88479 17.539 1.7644 17.0916 1.76433 16.6363V4.35778C1.76282 3.9019 1.88223 3.45357 2.11065 3.05747C2.33908 2.66136 2.66856 2.33129 3.06627 2.10013C3.46398 1.86897 3.91605 1.74478 4.37746 1.73995C4.83886 1.73511 5.2935 1.84978 5.69609 2.07255L16.8746 8.21182C17.2869 8.43833 17.6305 8.76964 17.8697 9.17144C18.1089 9.57324 18.235 10.0309 18.235 10.4971C18.235 10.9632 18.1089 11.4209 17.8697 11.8227C17.6305 12.2245 17.2869 12.5558 16.8746 12.7823Z" fill="white" />
                             </svg>
@@ -640,7 +643,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewBox="0 0 30 23" fill="none">
                     <path d="M26.8619 0.0766602H3.13815C2.30615 0.0776177 1.5085 0.412295 0.92019 1.00727C0.331877 1.60224 0.000946861 2.40893 0 3.25035V18.903C0.000946861 19.7444 0.331877 20.5511 0.92019 21.146C1.5085 21.741 2.30615 22.0757 3.13815 22.0767H26.8618C27.6938 22.0757 28.4915 21.741 29.0798 21.146C29.6681 20.5511 29.9991 19.7444 30 18.903V3.25035C29.9991 2.40893 29.6682 1.60223 29.0799 1.00725C28.4916 0.412275 27.6939 0.077601 26.8619 0.0766602ZM21.2823 11.0723L28.7448 5.1491V18.3985L21.2823 11.0723ZM3.13815 1.34614H26.8618C27.361 1.34671 27.8396 1.54751 28.1926 1.9045C28.5456 2.26148 28.7442 2.74549 28.7447 3.25035V3.53534L16.6685 13.121C16.227 13.4696 15.6828 13.6587 15.1226 13.6583C14.5625 13.6578 14.0186 13.4678 13.5777 13.1185L1.25526 3.53293V3.25035C1.25583 2.74549 1.45438 2.26148 1.80737 1.9045C2.16036 1.54751 2.63895 1.34671 3.13815 1.34614ZM8.93985 11.1122L1.25526 18.4241V5.1345L8.93985 11.1122ZM26.8619 20.8072H3.13815C2.81671 20.807 2.50066 20.7236 2.22009 20.5649C1.93953 20.4063 1.70378 20.1776 1.53531 19.9008L9.9477 11.8967L12.8086 14.1221C13.4702 14.6448 14.2857 14.9286 15.1252 14.9284C15.9648 14.9282 16.7801 14.6439 17.4415 14.1209L20.2858 11.8637L28.468 19.8957C28.2998 20.174 28.0638 20.4039 27.7826 20.5635C27.5014 20.7231 27.1844 20.807 26.8619 20.8072Z" fill="#355CDB" />
                 </svg>
-                <a href="mailto:tuyetngan3454@gmail.com" target="_blank">tuyetngan3454@gmail.com</a>
+                <a href="mailto:ngdtngannnnn@gmail.com" target="_blank">ngdtngannnnn@gmail.com</a>
             </div>
 
             <div class="work-item">
@@ -660,143 +663,24 @@
                 </svg>
                 <a href="https://www.behance.net/ngntuyt27" target="_blank">behance.net/ngntuyt27</a>
             </div>
-    </div>
+        </div>
     </section>
 
     <script src="script/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
-
     <script>
-        // chạy khi toàn bộ trang load xong
-        window.addEventListener('load', init);
-
-        function init() {
-            const { Engine, World, Bodies, Body, Runner } = Matter;
-
-            // Tạo engine + world + runner
-            const engine = Engine.create();
-            const world = engine.world;
-            engine.gravity.y = 1.0; // gravity
-
-            const runner = Runner.create();
-            Runner.run(runner, engine); // start physics
-
-            const container = document.getElementById('scene-box');
-            const header = document.querySelector('.project-header');
-
-            function setContainerHeight() {
-                const headerH = header ? header.getBoundingClientRect().height : 0;
-                const margin = 60;
-                const available = window.innerHeight - headerH - margin * 2;
-                const want = Math.max(100, available);
-
-                container.style.height = want + 'px';
-                container.style.maxHeight = available + 'px';
-            }
-            setContainerHeight();
-
-            // tạo tường (walls) xung quanh container
-            let rect = container.getBoundingClientRect();
-            let walls = [];
-            function createWalls() {
-                if (walls.length) {
-                    World.remove(world, walls);
-                    walls = [];
-                }
-                rect = container.getBoundingClientRect();
-
-                walls = [
-                    Bodies.rectangle(rect.width / 2, rect.height + 25, rect.width, 50, { isStatic: true, label: 'bottom' }),
-                    Bodies.rectangle(rect.width / 2, -25, rect.width, 50, { isStatic: true, label: 'top' }),
-                    Bodies.rectangle(-25, rect.height / 2, 50, rect.height, { isStatic: true, label: 'left' }),
-                    Bodies.rectangle(rect.width + 25, rect.height / 2, 50, rect.height, { isStatic: true, label: 'right' })
-                ];
-                World.add(world, walls);
-            }
-            createWalls();
-
-            const boxW = 300, boxH = 300;
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-
-            const box1 = Bodies.rectangle(centerX - 150, centerY, boxW, boxH, {
-                restitution: 0.7, friction: 0.3, density: 0.002, label: 'box1'
+        document.querySelector(".ui-box").addEventListener("click", function () {
+            document.querySelector("#ui-design").scrollIntoView({
+                behavior: "smooth"
             });
+        });
 
-            const box2 = Bodies.rectangle(centerX + 150, centerY, boxW, boxH, {
-                restitution: 0.7, friction: 0.3, density: 0.002, label: 'box2'
+        document.querySelector(".web-box").addEventListener("click", function () {
+            document.querySelector("#web-design").scrollIntoView({
+                behavior: "smooth"
             });
-
-            World.add(world, box1);
-            setTimeout(() => { World.add(world, box2); }, 500);
-
-            const div1 = document.getElementById('box1');
-            const div2 = document.getElementById('box2');
-
-            function updateDOM() {
-                div1.style.transform = `translate(${box1.position.x - boxW / 2}px, ${box1.position.y - boxH / 2}px) rotate(${box1.angle}rad)`;
-                div2.style.transform = `translate(${box2.position.x - boxW / 2}px, ${box2.position.y - boxH / 2}px) rotate(${box2.angle}rad)`;
-                requestAnimationFrame(updateDOM);
-            }
-            updateDOM();
-
-            // Biến kiểm tra có kéo hay không
-            let box1Dragged = false;
-            let box2Dragged = false;
-
-            interact('.box').draggable({
-                modifiers: [
-                    interact.modifiers.restrictRect({ restriction: container, endOnly: true })
-                ],
-                listeners: {
-                    start(event) {
-                        const targetBody = event.target.id === 'box1' ? box1 : box2;
-                        Body.setStatic(targetBody, true);
-                        Body.setVelocity(targetBody, { x: 0, y: 0 });
-
-                        // reset dragged
-                        if (event.target.id === 'box1') box1Dragged = false;
-                        else box2Dragged = false;
-                    },
-                    move(event) {
-                        const targetBody = event.target.id === 'box1' ? box1 : box2;
-                        Body.translate(targetBody, { x: event.dx, y: event.dy });
-
-                        // nếu di chuyển > 2px → drag
-                        if (Math.abs(event.dx) > 2 || Math.abs(event.dy) > 2) {
-                            if (event.target.id === 'box1') box1Dragged = true;
-                            else box2Dragged = true;
-                        }
-                    },
-                    end(event) {
-                        const targetBody = event.target.id === 'box1' ? box1 : box2;
-                        Body.setStatic(targetBody, false);
-                    }
-                }
-            });
-
-            // Scroll chỉ khi click mà không kéo
-            div1.addEventListener('click', () => {
-                if (!box1Dragged) {
-                    document.getElementById('ui-design').scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-
-            div2.addEventListener('click', () => {
-                if (!box2Dragged) {
-                    document.getElementById('web-design').scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-
-            window.addEventListener('resize', () => {
-                setContainerHeight();
-                createWalls();
-            });
-
-            console.log('scene rect init', rect);
-        }
+        });
     </script>
-
 </body>
 </html>
