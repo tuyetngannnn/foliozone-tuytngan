@@ -1119,8 +1119,6 @@ body {
 .work-bg {
     position: absolute;
     inset: 0;
-    background: url('../svg/bg_work_contact.svg') no-repeat center bottom;
-    background-size: cover;
 }
 
 /* Left image */
@@ -3277,11 +3275,12 @@ body {
     }
 
         .work-together {
-            height: 300px;
-            padding: 40px 20px 60px;
+            height: auto;
+            width: 100%;
+            padding: 40px 0 0;
             text-align: center;
             background-size: cover;
-            display: flex;
+            display: flex
         }
 
     .work-title-shadow {
@@ -3291,44 +3290,43 @@ body {
 
         /* Hình mèo */
         .work-img-left {
-            position: relative;
-            width: 180px;
-            height: 180px;
-            margin: 0 auto 20px;
-            top: 50px;
-            left: -20px;
+        position: relative;
+        width: 180px;
+        height: 180px;
+        top: 70px;
+        left: 0px
         }
 
         /* Tiêu đề */
         .work-title-1 {
             position: absolute;
-            font-size: 15px;
+            font-size: 20px;
             letter-spacing: 1.5px;
             margin: 10px 0 20px;
-            left: 65px;
+            left: 40px;
             top: 35px;
             text-align: center;
         }
 
         /* Bong bóng */
         .work-poster {
-            position: relative;
-            width: 100%;
-            max-width: 240px;
-            height: 230px;
-            margin: 0 auto 20px;
-            left: -35px;
-            top: 20px;
+                  position: relative;
+        width: 100%;
+        max-width: 240px;
+        height: 230px;
+        margin: 0 auto 20px;
+        left: -17px;
+        top: 22px;
         }
 
         /* Danh sách liên hệ */
         .work-list {
-            position: absolute;
-            margin: 20px auto 0;
-            gap: 8px;
-            top: 110px;
-            left: 212px;
-            transform: rotate(15deg);
+                   position: absolute;
+        margin: 20px auto 0;
+        gap: 8px;
+        top: 110px;
+        left: 212px;
+        transform: rotate(15deg);
         }
 
         .work-item {
